@@ -48,11 +48,11 @@ function insert (string $entidade, array $dados) : string
     return $instrucao;
 
  }
- function select (string $entidade, array $campos, array $criterio = [],
+ function select(string $entidade, array $campos, array $criterio = [],
  string $ordem = null) : string
  {
     $instrucao = "SELECT " . implode(', ' , $campos);
-    $instrucao .= "FROM {$entidade}";
+    $instrucao .= " FROM {$entidade}";
 
     if(!empty($criterio)){
         $instrucao .= ' WHERE ';
