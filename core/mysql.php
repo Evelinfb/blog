@@ -11,7 +11,6 @@ function insere(string $entidade, array $dados) : bool
     }
 
     $instrucao = insert($entidade, $coringa);
-    echo $instrucao;
     $conexao = conecta ();
 
     $stmt = mysqli_prepare($conexao, $instrucao);
