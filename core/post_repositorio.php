@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once '../includes/valida_login.php';
 require_once '../includes/funcoes.php';
 require_once 'conexao_mysql.php';
 require_once 'sql.php';
@@ -60,5 +61,5 @@ switch($acao){
 
             break;
 }
-// header('Location: ../index.php');
+header('Location: ../index.php');
 ?>
